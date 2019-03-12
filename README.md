@@ -1,4 +1,8 @@
 # TPU-MobilenetSSD
+## Environment
+1. LattePanda Alpha (Ubuntu16.04) / RaspberryPi3 (Raspbian) / LaptopPC (Ubuntu16.04)
+2. Edge TPU Accelerator
+3. USB Camera (Playstationeye)
 ## LattePanda Alpha Core m3 + USB 3.0 + Google Edge TPU Accelerator + MobileNet-SSD v2 + Async mode
 **320x240**  
 **about 80 - 90 FPS**  
