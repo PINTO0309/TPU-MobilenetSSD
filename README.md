@@ -2,10 +2,14 @@
 ## LattePanda Alpha Core m3 + USB 3.0 + Google Edge TPU Accelerator + MobileNet-SSD v2 + Async mode
 **320x240**  
 **about 80 - 90 FPS**  
+**https://youtu.be/LERXuDXn0kY**  
+  
 ![01](media/01.gif)
 ## LattePanda Alpha Core m3 + USB 3.0 + Google Edge TPU Accelerator + MobileNet-SSD v2 + Async mode
 **640x480**  
 **about 60 - 80 FPS**  
+**https://youtu.be/OFEQHCQ5MsM**  
+  
 ![02](media/02.gif)
 
 # Environment construction procedure
