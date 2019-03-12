@@ -30,3 +30,10 @@ $ git clone https://github.com/PINTO0309/TPU-MobilenetSSD.git
 $ cd TPU-MobilenetSSD
 $ python3 MobileNet-SSD-TPU-async.py
 ```
+
+# Reference
+- Get started with the USB Accelerator https://coral.withgoogle.com/tutorials/accelerator
+- Models https://coral.withgoogle.com/models/
+- Edge TPU Model Compiler https://coral.withgoogle.com/web-compiler/
+- API demos https://coral.withgoogle.com/tutorials/edgetpu-api/#api-demos
+- Edge TPU Benchmark https://coral.withgoogle.com/tutorials/edgetpu-faq/
