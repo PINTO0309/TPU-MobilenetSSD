@@ -25,6 +25,8 @@ $ bash ./install.sh
 ```
 
 # Usage
+**MobileNet-SSD-TPU-async.py -> USB camera animation and inference are asynchronous (The frame is slightly off.)**  
+**MobileNet-SSD-TPU-sync.py -> USB camera animation and inference are synchronous (The frame does not shift greatly.)**  
 ```bash
 $ git clone https://github.com/PINTO0309/TPU-MobilenetSSD.git
 $ cd TPU-MobilenetSSD
