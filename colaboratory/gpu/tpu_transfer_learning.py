@@ -30,7 +30,7 @@ files.upload()
 
 !mv collabo.zip models/research
 
-# %cd models/research
+%cd models/research
 !unzip collabo.zip
 
 !rm collabo.zip
@@ -44,36 +44,36 @@ files.upload()
 !mkdir configs
 
 !git clone https://github.com/pdollar/coco.git
-# %cd coco/PythonAPI
+%cd coco/PythonAPI
 !python3 setup.py install
 
-# %cd ../..
+%cd ../..
 
 !wget https://github.com/protocolbuffers/protobuf/archive/v3.7.0.zip
 !unzip v3.7.0.zip;rm v3.7.0.zip
-# %cd protobuf-3.7.0
+%cd protobuf-3.7.0
 !./autogen.sh
 !./configure
 !make -j$(($(nproc) + 1))
 
 !make install
 
-# %cd python
+%cd python
 !export LD_LIBRARY_PATH=../src/.libs
 !python3 setup.py build --cpp_implementation
 !python3 setup.py test --cpp_implementation
 !python3 setup.py install --cpp_implementation
 !ldconfig
 
-# %cd ../..
+%cd ../..
 
 !protoc --version
 
 !./prepare_checkpoint_and_dataset.sh --network_type mobilenet_v2_ssd --train_whole_model false
 
 !source "$PWD/constants.sh"
-# %env NUM_TRAINING_STEPS=1000
-# %env NUM_EVAL_STEPS=100
+%env NUM_TRAINING_STEPS=1000
+%env NUM_EVAL_STEPS=100
 !rm -rf learn/train
 !./retrain_detection_model.sh \
   --num_training_steps ${NUM_TRAINING_STEPS} \
