@@ -12,6 +12,8 @@
 
 4.[Since I wanted to speed up the operation of the Edge TPU Accelerator as little as possible, I transferred and learned MobileNetv2-SSD / MobileNetv1-SSD + MS-COCO with Pascal VOC and generated .tflite. Part 2](https://qiita.com/PINTO/items/8a91d79abe6e939ef01c)  
 
+5.[Since we wanted to speed up the operation of the Edge TPU Accelerator as little as possible, I transferred and learned MS-COCO with Pascal VOC and generated .tflite, Google Colaboratery [GPU]. Part 3](https://qiita.com/PINTO/items/6eb6de95e3cda0e09c84)  
+
 ## LattePanda Alpha Core m3 + USB 3.0 + Google Edge TPU Accelerator + MobileNet-SSD v2 + Async mode
 **320x240**  
 **about 80 - 90 FPS**  
