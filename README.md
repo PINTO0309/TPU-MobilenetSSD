@@ -10,7 +10,7 @@
 
 3.[I wanted to speed up the operation of the Edge TPU Accelerator as little as possible, so I tried to generate a .tflite of MobileNetv2-SSDLite (Pascal VOC) and compile it into a TPU model. Part 1](https://qiita.com/PINTO/items/8368b0bc2d2d75a2f2e6)  
 
-4.[Since I wanted to speed up the operation of the Edge TPU Accelerator as little as possible, I transferred and learned MobileNetv2-SSD / MobileNetv1-SSD + MS-COCO with Pascal VOC and generated .tflite. Part 2](https://qiita.com/PINTO/items/8a91d79abe6e939ef01c)  
+4.[Since I wanted to speed up the operation of the Edge TPU Accelerator as little as possible, I transferred and learned MobileNetv2-SSD / MobileNetv1-SSD + MS-COCO with Pascal VOC and generated .tflite. Docker Part 2](https://qiita.com/PINTO/items/8a91d79abe6e939ef01c)  
 
 5.[Since we wanted to speed up the operation of the Edge TPU Accelerator as little as possible, I transferred and learned MS-COCO with Pascal VOC and generated .tflite, Google Colaboratory [GPU]. Part 3](https://qiita.com/PINTO/items/6eb6de95e3cda0e09c84)  
 
