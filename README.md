@@ -1,7 +1,7 @@
 # TPU-MobilenetSSD
 ## Environment
 1. LattePanda Alpha (Ubuntu16.04) / RaspberryPi3 (Raspbian) / LaptopPC (Ubuntu16.04)
-2. Edge TPU Accelerator
+2. Edge TPU Accelerator (Supports multi-TPU)
 3. USB Camera (Playstationeye)
 ## My articles
 1.[I tested the operating speed of MobileNet-SSD v2 using Google Edge TPU Accelerator with RaspberryPi3 (USB2.0) and LaptopPC (USB3.1) (MS-COCO)](https://qiita.com/PINTO/items/dd6ba67643bdd3a0e595)  
