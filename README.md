@@ -40,9 +40,13 @@
 
 # Environment construction procedure
 ```bash
-$ wget http://storage.googleapis.com/cloud-iot-edge-pretrained-models/edgetpu_api.tar.gz
+$ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add-
+$ echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+$ sudo apt-get update
+$ sudo apt-get upgrade edgetpu
+$ wget https://dl.google.com/coral/edgetpu_api/edgetpu_api_latest.tar.gz -O edgetpu_api.tar.gz --trust-server-names
 $ tar xzf edgetpu_api.tar.gz
-$ cd python-tflite-source
+$ cd edgetpu_api
 $ bash ./install.sh
 ```
 
