@@ -14,7 +14,9 @@
 
 5.[Since we wanted to speed up the operation of the Edge TPU Accelerator as little as possible, I transferred and learned MS-COCO with Pascal VOC and generated .tflite, Google Colaboratory [GPU]. Part 3](https://qiita.com/PINTO/items/6eb6de95e3cda0e09c84)  
 
-6.[Edge TPU Accelerator + custom model MobileNetv2-SSDLite .tflite generation 【Success】 Docker compilation Part.4](https://qiita.com/PINTO/items/1e34365cf46a3e660e25)
+6.[Edge TPU Accelerator + custom model MobileNetv2-SSDLite .tflite generation 【Success】 Docker compilation Part.4](https://qiita.com/PINTO/items/1e34365cf46a3e660e25)  
+
+7. [[150 FPS ++] Coral Edge TPU Accelerator を３本突き刺して並列推論し超速の物体検出推論性能を獲得する ー無駄な高性能の極みへー](https://qiita.com/PINTO/items/63b6f01eb22a5ab97901)  
 
 ## LattePanda Alpha Core m3 + USB 3.0 + Google Edge TPU Accelerator + MobileNet-SSD v2 + Async mode
 **320x240**  
