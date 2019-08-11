@@ -31,6 +31,13 @@
   
 ![02](media/02.gif)
 
+## Core i7 + USB 3.0 + Google Edge TPU Accelerator / Multi-TPUs x3 + MobileNet-SSD v2 + Async mode
+**320x240**  
+**about 150 FPS++**  
+**https://youtu.be/_qE9kmk8gUA**  
+  
+![03](media/03.gif)
+
 # Environment construction procedure
 ```bash
 $ wget http://storage.googleapis.com/cloud-iot-edge-pretrained-models/edgetpu_api.tar.gz
