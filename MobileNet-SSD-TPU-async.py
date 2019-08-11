@@ -7,6 +7,7 @@ from PIL import Image
 from time import sleep
 import multiprocessing as mp
 from edgetpu.detection.engine import DetectionEngine
+from edgetpu.basic import edgetpu_utils
 
 lastresults = None
 processes = []
@@ -97,7 +98,25 @@ def camThread(label, results, frameBuffer, camera_width, camera_height, vidfps, 
 
 def inferencer(results, frameBuffer, model, camera_width, camera_height):
 
-    engine = DetectionEngine(model)
+    engine = None
+
+    # Acquisition of TPU list without model assignment
+    devices = edgetpu_utils.ListEdgeTpuPaths(edgetpu_utils.EDGE_TPU_STATE_UNASSIGNED)
+
+    devopen = False
+    for device in devices:
+        try:
+            engine = DetectionEngine(model, device)
+            devopen = True
+            break
+        except:
+            continue
+
+    if devopen == False:
+        print("TPU Devices open Error!!!")
+        sys.exit(1)
+
+    print("Loaded Graphs!!! ")
 
     while True:
 
@@ -179,11 +198,13 @@ if __name__ == '__main__':
         processes.append(p)
 
         # Activation of inferencer
-        p = mp.Process(target=inferencer,
-                       args=(results, frameBuffer, model, camera_width, camera_height),
-                       daemon=True)
-        p.start()
-        processes.append(p)
+        devices = edgetpu_utils.ListEdgeTpuPaths(edgetpu_utils.EDGE_TPU_STATE_UNASSIGNED)
+        for devnum in range(len(devices)):
+            p = mp.Process(target=inferencer,
+                           args=(results, frameBuffer, model, camera_width, camera_height),
+                           daemon=True)
+            p.start()
+            processes.append(p)
 
         while True:
             sleep(1)
