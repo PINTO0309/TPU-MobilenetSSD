@@ -61,6 +61,17 @@ $ cd TPU-MobilenetSSD
 $ python3 MobileNet-SSD-TPU-async.py
 ```
 
+```bash
+usage: MobileNet-SSD-TPU-async.py [-h] [--model MODEL] [--label LABEL]
+                                  [--usbcamno USBCAMNO]
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --model MODEL        Path of the detection model.
+  --label LABEL        Path of the labels file.
+  --usbcamno USBCAMNO  USB Camera number.
+```
+
 # Reference
 - Get started with the USB Accelerator https://coral.withgoogle.com/tutorials/accelerator
 - Models https://coral.withgoogle.com/models/
